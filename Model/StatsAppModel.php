@@ -1,1 +1,8 @@
-<?php class StatsAppModel extends AppModel{    public $tablePrefix = 'stats__';}
+<?php 
+
+class StatsAppModel extends AppModel
+{    
+
+	public $tablePrefix = 'stats__';
+
+}
