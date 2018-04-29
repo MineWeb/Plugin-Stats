@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto');
+
+/*
+    [PANEL STAFF]
+ */
+div.staff-container .panel, div.staff-container .panel-heading, div.stats-container .panel, div.stats-container .panel-heading{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+div.staff-container .panel { border:none; }
+div.staff-container .panel-body{ padding:0; }
+div.staff-container .panel-heading {
+    border-bottom: 3px solid #FFF;
+    color: #FFF;
+    font-weight: 700;
+}
+div.staff-container .panel-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+}
+div.staff-container .staff-box { padding: 5px 15px; }
+div.staff-container .staff-description, div.staff-container .panel-body img{
+    display: inline-block;
+    vertical-align: middle;
+}
+div.staff-container .panel-body img{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+div.staff-container .staff-description { margin-left:10px; }
+div.staff-container .staff-description span { display: block; }
+div.staff-container .staff-description span.function { font-family: Roboto, sans-serif; }
+div.staff-container .panel-footer {
+    background: #ecf0f1;
+    border-top-width: 3px;
+    border-bottom-color: #bdc3c7;
+    font-family: Roboto, sans-serif;
+    color: #757c7d;
+}
+
+
+div.staff-container .panel .staff-description span.username {
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+
+div.staff-container .panel-danger .panel-heading { border-bottom-color: #c0392b; background: #e74c3c; }
+div.staff-container .panel-danger .staff-description span.username { color: #c0392b; }
+div.staff-container .panel-primary .panel-heading { border-bottom-color: #16a085; background: #1abc9c; }
+div.staff-container .panel-primary .staff-description span.username { color: #16a085; }
+div.staff-container .panel-info .panel-heading { border-bottom-color: #2980b9; background: #3498db; }
+div.staff-container .panel-info .staff-description span.username { color: #2980b9; }
+div.staff-container .panel-warning .panel-heading { border-bottom-color: #e67e22; background: #f39c12; }
+div.staff-container .panel-warning .staff-description span.username { color: #e67e22; }
+div.staff-container .panel-success .panel-heading { border-bottom-color: #27ae60; background: #2ecc71; }
+div.staff-container .panel-success .staff-description span.username { color: #27ae60; }
+div.staff-container .panel-orange .panel-heading { border-bottom-color: #d35400; background: #e67e22; }
+div.staff-container .panel-orange .staff-description span.username { color: #d35400; }
+div.staff-container .panel-violet .panel-heading { border-bottom-color: #8e44ad; background: #9b59b6; }
+div.staff-container .panel-violet .staff-description span.username { color: #8e44ad; }
+div.staff-container .panel-dark-gris .panel-heading { border-bottom-color: #2c3e50; background: #34495e; }
+div.staff-container .panel-dark-gris .staff-description span.username { color: #2c3e50; }
+/*
+    [/PANEL STAFF]
+ */
+
+/*
+    [PANEL STATS]
+ */
+div.stats-container .panel { border:none; }
+div.stats-container .panel-body{ padding: 20px 0; margin: 0; }
+div.stats-container .panel-heading {
+    border-bottom: 3px solid #95a5a6;
+    font-weight: 700;
+    background: #ececec;
+}
+div.stats-container .panel-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    color: #95a5a6;
+}
+div.stats-container .stats-seperator { margin: 20px 0; }
+div.stats-container .name, div.stats-container .value {
+    display: block;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+div.stats-container .name {
+
+}
+div.stats-container .value {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 35px;
+    font-family: "Open Sans", sans-serif;
+}
+/*
+    [/PANEL STATS]
+ */

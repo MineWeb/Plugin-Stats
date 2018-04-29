@@ -1,0 +1,38 @@
+{
+  "name": "Stats",
+  "admin_menus": {
+    "GLOBAL__CUSTOMIZE": {
+      "Stats": {
+        "icon": "bar-chart-o",
+        "menu": {
+          "Staff": {
+            "icon": "users",
+            "permission": "STATS__ADMIN",
+            "route": "/admin/stats"
+          }
+        }
+      }
+    }
+  },
+  "navbar_routes": {
+    "Stats": "/stats"
+  },
+  "author": "Leukos",
+  "version": "1.0.2",
+  "apiID": 140,
+  "useEvents": true,
+  "permissions": {
+    "available": [
+      "STATS__ADMIN"
+    ],
+    "default": {
+      "0": [],
+      "2": [
+        "STATS__ADMIN"
+      ]
+    }
+  },
+  "requirements": {
+    "CMS": "^1.2.0"
+  }
+}
