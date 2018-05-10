@@ -9,7 +9,7 @@
                     <form action="" method="post" data-ajax="true" data-redirect-url="<?= $this->Html->url('/admin/stats') ?>">
                         <div class="form-group">
                             <label><?= $Lang->get('GLOBAL__NAME') ?></label>
-                            <input name="name" value="<?= $rang['Staff']['name'] ?>" type="text" class="form-control" placeholder="Ex: Administrateurs">
+                            <input name="name" value="<?= $rang['Staff']['name'] ?>" type="text" class="form-control" placeholder="<?= $Lang->get('STATS__RANK_EXEMPLE') ?>">
                         </div>
                         <div class="form-group">
                             <label><?= $Lang->get('STATS__COLOR_RANK') ?></label>
@@ -26,11 +26,11 @@
                         </div>
                         <div class="form-group">
                             <label><?= $Lang->get('STATS__RANK') ?></label>
-                            <input name="level" value="<?= $rang['Staff']['level'] ?>" type="text" class="form-control" placeholder="Ex: 1 (équivaut à tout en haut)">
+                            <input name="level" value="<?= $rang['Staff']['level'] ?>" type="text" class="form-control" placeholder="<?= $Lang->get('STATS__RANK_NUMBER_EXEMPLE') ?>">
                         </div>
                         <div class="form-group">
                             <label><?= $Lang->get('STATS__RANK_DESC') ?></label>
-                            <input name="desc" value="<?= $rang['Staff']['description'] ?>" type="text" class="form-control" placeholder="Ex: Les administrateur sont là pour gérer le serveur.">
+                            <input name="desc" value="<?= $rang['Staff']['description'] ?>" type="text" class="form-control" placeholder="<?= $Lang->get('STATS__RANK_DESC_EXEMPLE') ?>">
                         </div>
                         <div class="pull-right">
                             <a class="btn btn-warning" href="<?= $this->Html->url('/admin/stats') ?>"><?= $Lang->get('GLOBAL__CANCEL') ?></a>
