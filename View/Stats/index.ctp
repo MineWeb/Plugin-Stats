@@ -30,7 +30,7 @@ function translate($day) {
                         <?php foreach ($staffResult as $s): ?>
                             <?php if($staff['Staff']['id'] == $s['StaffUser']['staff_id']): ?>
                                 <div class="col-md-12 staff-box">
-                                    <img src="https://minotar.net/avatar/<?= $s['StaffUser']['user_id'] ?>/40" alt="<?= $s['StaffUser']['user_id'] ?>">
+                                    <img width="40px;" src="<?= $this->Html->url('/API/get_head_skin/'.$s['StaffUser']['user_id']) ?>/40" class="">
                                     <div class="staff-description">
                                         <span class="username"><?= $s['StaffUser']['user_id'] ?></span>
                                         <span class="function"><?= $s['StaffUser']['function'] ?></span>
@@ -51,32 +51,32 @@ function translate($day) {
             <div class="col-md-12 stats-container">
                 <div class="panel panel-stats">
                     <div class="panel-heading">
-                        <h3 class="panel-title">En Chiffres</h3>
+                        <h3 class="panel-title"><?= $Lang->get('STATS__STATS_NUMBER') ?></h3>
                     </div>
                     <div class="panel-body">
                         <div class="col-md-4 stats-box">
-                            <span class="name">Joueurs Inscrits</span>
+                            <span class="name"><?= $Lang->get('STATS__STATS_REGISTER') ?></span>
                             <span class="value"><?= $count_register ?></span>
                         </div>
                         <div class="col-md-4 stats-box">
-                            <span class="name">Joueurs Uniques</span>
+                            <span class="name"><?= $Lang->get('STATS__STATS_UNIQUE') ?></span>
                             <span class="value"><?= $uUsers ?></span>
                         </div>
                         <div class="col-md-4 stats-box">
-                            <span class="name">Visites</span>
+                            <span class="name"><?= $Lang->get('STATS__STATS_VISITE') ?></span>
                             <span class="value"><?= $count_visits ?></span>
                         </div>
                         <div class="col-md-12 stats-seperator"></div>
                         <div class="col-md-4 stats-box">
-                            <span class="name">News</span>
+                            <span class="name"><?= $Lang->get('STATS__STATS_NEWS') ?></span>
                             <span class="value"><?= $count_news ?></span>
                         </div>
                         <div class="col-md-4 stats-box">
-                            <span class="name">Commentaires</span>
+                            <span class="name"><?= $Lang->get('STATS__STATS_COMMENT') ?></span>
                             <span class="value"><?= $count_comment ?></span>
                         </div>
                         <div class="col-md-4 stats-box">
-                            <span class="name">J'aime</span>
+                            <span class="name"><?= $Lang->get('STATS__STATS_NEWS') ?></span>
                             <span class="value"><?= $count_like ?></span>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ function translate($day) {
             <div class="col-md-12 stats-container">
                 <div class="panel panel-stats">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Inscriptions En Graphiques</h3>
+                        <h3 class="panel-title"><?= $Lang->get('STATS__STATS_SHOW') ?></h3>
                     </div>
                     <div class="panel-body">
                         <div class="col-md-12 stats-box">
@@ -99,7 +99,7 @@ function translate($day) {
             <div class="col-md-12 stats-container">
                 <div class="panel panel-stats">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Visites En Graphiques</h3>
+                        <h3 class="panel-title"><?= $Lang->get('STATS__STATS_SHOW_VISITE') ?></h3>
                     </div>
                     <div class="panel-body">
                         <div class="col-md-12 stats-box">

@@ -3,25 +3,25 @@
         <div class="col-md-12">
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Staff</h3>
+                    <h3 class="box-title"><?= $Lang->get('STATS__STAFF') ?></h3>
                 </div>
                 <div class="box-body">
                     <div class="col-md-12 text-right">
-                        <a class="btn btn-success" href="<?= $this->Html->url('/admin/stats/ajouterRang') ?>" style="color:#FFF"><i class="fa fa-plus"></i> Ajouter un rang</a>
-                        <a class="btn btn-success" href="<?= $this->Html->url('/admin/stats/ajouterStaff') ?>" style="color:#FFF"><i class="fa fa-plus"></i> Ajouter un staff</a>
+                        <a class="btn btn-success" href="<?= $this->Html->url('/admin/stats/ajouterRang') ?>" style="color:#FFF"><i class="fa fa-plus"></i> <?= $Lang->get('STATS__ADD_RANK') ?></a>
+                        <a class="btn btn-success" href="<?= $this->Html->url('/admin/stats/ajouterStaff') ?>" style="color:#FFF"><i class="fa fa-plus"></i> <?= $Lang->get('STATS__ADD_STAFF') ?></a>
                     </div>
                 </div>
                 <div class="box-body">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Rangs</h3>
+                        <h3 class="box-title"><?= $Lang->get('STATS__RANK') ?></h3>
                     </div>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
                             <tr>
-                                <th>#</th>
-                                <th>Nom</th>
-                                <th>Actions</th>
+                                <th><?= $Lang->get('STATS__NUMBER') ?></th>
+                                <th><?= $Lang->get('GLOBAL__NAME') ?></th>
+                                <th><?= $Lang->get('GLOBAL__ACTIONS') ?></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -40,8 +40,8 @@
                                         </span>
                                     </td>
                                     <td>
-                                        <a class="btn btn-warning" style="color: #FFF" href="<?= $this->Html->url('/admin/stats/modifierRang/' .  $staff['Staff']['id']) ?>">Modifier</a>
-                                        <a class="btn btn-danger" style="color: #FFF" href="<?= $this->Html->url('/admin/stats/supprimerRang/' .  $staff['Staff']['id']) ?>">Supprimer</a>
+                                        <a class="btn btn-warning" style="color: #FFF" href="<?= $this->Html->url('/admin/stats/modifierRang/' .  $staff['Staff']['id']) ?>"><?= $Lang->get('GLOBAL__EDIT') ?></a>
+                                        <a class="btn btn-danger" style="color: #FFF" href="<?= $this->Html->url('/admin/stats/supprimerRang/' .  $staff['Staff']['id']) ?>"><?= $Lang->get('GLOBAL__DELETE') ?></a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
@@ -51,17 +51,17 @@
                 </div>
                 <div class="box-body">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Liste des staffs</h3>
+                        <h3 class="box-title"><?= $Lang->get('STATS__STAFF_LIST') ?></h3>
                     </div>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
                             <tr>
-                                <th>#</th>
-                                <th>Nom</th>
-                                <th>Rang</th>
-                                <th>Fonction</th>
-                                <th>Action</th>
+                                <th><?= $Lang->get('STATS__NUMBER') ?></th>
+                                <th><?= $Lang->get('GLOBAL__NAME') ?></th>
+                                <th><?= $Lang->get('STATS__RANK') ?></th>
+                                <th><?= $Lang->get('STATS__FONCTION') ?></th>
+                                <th><?= $Lang->get('GLOBAL__ACTIONS') ?></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -72,8 +72,8 @@
                                     <td><?= $staff['Staff']['name'] ?></td>
                                     <td><?= $staff['StaffUser']['function'] ?></td>
                                     <td>
-                                        <a class="btn btn-warning" style="color: #FFF" href="<?= $this->Html->url('/admin/stats/modifierStaff/' . $staff['StaffUser']['id']) ?>">Modifier</a>
-                                        <a class="btn btn-danger" style="color: #FFF" href="<?= $this->Html->url('/admin/stats/supprimerStaff/' . $staff['StaffUser']['id']) ?>">Supprimer</a>
+                                        <a class="btn btn-warning" style="color: #FFF" href="<?= $this->Html->url('/admin/stats/modifierStaff/' . $staff['StaffUser']['id']) ?>"><?= $Lang->get('GLOBAL__EDIT') ?></a>
+                                        <a class="btn btn-danger" style="color: #FFF" href="<?= $this->Html->url('/admin/stats/supprimerStaff/' . $staff['StaffUser']['id']) ?>"><?= $Lang->get('GLOBAL__DELETE') ?></a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
