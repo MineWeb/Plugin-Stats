@@ -21,7 +21,7 @@
                         </div>
                         <div class="form-group">
                             <label><?= $Lang->get('STATS__FONCTION') ?></label>
-                            <input name="desc" type="text" class="form-control" placeholder="Ex: Administrateur & Développeur">
+                            <input name="desc" type="text" class="form-control" placeholder="<?= $Lang->get('STATS__RANK_EXEMPLE') ?>">
                         </div>
                         <div class="pull-right">
                             <a class="btn btn-warning" href="<?= $this->Html->url('/admin/stats') ?>"><?= $Lang->get('GLOBAL__CANCEL') ?></a>

@@ -9,11 +9,11 @@
                     <form action="" method="post" data-ajax="true" data-redirect-url="<?= $this->Html->url('/admin/stats') ?>">
                         <div class="form-group">
                             <label><?= $Lang->get('GLOBAL__NAME') ?></label>
-                            <input name="user_id" value="<?= $staffsU['StaffUser']['user_id'] ?>" type="text" class="form-control" placeholder="Pseudo">
+                            <input name="user_id" value="<?= $staffsU['StaffUser']['user_id'] ?>" type="text" class="form-control" placeholder="<?= $Lang->get('GLOBAL__NAME') ?>">
                         </div>
                         <div class="form-group">
                             <label><?= $Lang->get('STATS__FONCTION') ?></label>
-                            <input name="desc" value="<?= $staffsU['StaffUser']['function'] ?>" type="text" class="form-control" placeholder="Ex: Administrateur & Développeur">
+                            <input name="desc" value="<?= $staffsU['StaffUser']['function'] ?>" type="text" class="form-control" placeholder="<?= $Lang->get('STATS__RANK_EXEMPLE') ?>">
                         </div>
                         <div class="pull-right">
                             <a class="btn btn-warning" href="<?= $this->Html->url('/admin/stats') ?>"><?= $Lang->get('GLOBAL__CANCEL') ?></a>
