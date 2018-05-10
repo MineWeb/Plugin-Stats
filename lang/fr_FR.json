@@ -28,6 +28,10 @@
   "STATS__STATS_COMMENT": "Commentaires",
   "STATS__STATS_LIKE": "J'aime",
   "STATS__STATS_SHOW": "Inscriptions En Graphiques",
-  "STATS__STATS_SHOW_VISITE": "Visites En Graphiques"
+  "STATS__STATS_SHOW_VISITE": "Visites En Graphiques",
+  "STATS__RANK_EXEMPLE": "Ex: Administrateur & Développeur",
+  "STATS__RANK_NUMBER_EXEMPLE": "Ex: 1 (équivaut à tout en haut)",
+  "STATS__RANK_DESC_EXEMPLE": "Ex: Les administrateur sont là pour gérer le serveur.",
+  "STATS__RANK_EXEMPLE": "Ex: Administrateurs",
   
 }
