@@ -28,5 +28,9 @@
   "STATS__STATS_COMMENT": "Comments",
   "STATS__STATS_LIKE": "Like",
   "STATS__STATS_SHOW": "Graphic Registered Players",
-  "STATS__STATS_SHOW_VISITE": "Graphic Of Visits"
+  "STATS__STATS_SHOW_VISITE": "Graphic Of Visits",
+  "STATS__RANK_EXEMPLE": "Ex: Administrator & Développer",
+  "STATS__RANK_NUMBER_EXEMPLE": "Ex: 1 (equals at the very top)",
+  "STATS__RANK_DESC_EXEMPLE": "Ex: Administrators are there to manage the server.",
+  "STATS__RANK_EXEMPLE": "Ex: Administrators"
 }
