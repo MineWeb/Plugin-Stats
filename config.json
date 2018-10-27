@@ -1,7 +1,7 @@
 {
   "name": "Stats",
   "admin_menus": {
-    "GLOBAL__CUSTOMIZE": {
+    "GLOBAL__ADMIN_PLUGINS": {
       "Stats": {
         "icon": "bar-chart-o",
         "menu": {
@@ -18,13 +18,12 @@
     "Stats": "/stats"
   },
   "author": "Leukos",
-  "version": "1.0.2",
-  "apiID": 140,
+  "version": "1.0.3",
   "useEvents": true,
   "permissions": {
     "available": [
       "STATS__ADMIN"
-    ],
+	  ],
     "default": {
       "0": [],
       "2": [
