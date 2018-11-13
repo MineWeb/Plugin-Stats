@@ -18,7 +18,7 @@
     "Stats": "/stats"
   },
   "author": "Leukos",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "useEvents": true,
   "permissions": {
     "available": [
