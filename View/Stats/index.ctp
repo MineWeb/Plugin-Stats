@@ -76,7 +76,7 @@ function translate($day) {
                             <span class="value"><?= $count_comment ?></span>
                         </div>
                         <div class="col-md-4 stats-box">
-                            <span class="name"><?= $Lang->get('STATS__STATS_NEWS') ?></span>
+                            <span class="name"><?= $Lang->get('STATS__STATS_LIKE') ?></span>
                             <span class="value"><?= $count_like ?></span>
                         </div>
                     </div>
